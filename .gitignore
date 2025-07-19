@@ -1,0 +1,46 @@
+# Java class files
+*.class
+
+# Java JAR files
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# VS Code settings
+.vscode/
+
+# IDE files (Eclipse, IntelliJ, NetBeans)
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+nbproject/private/
+build/
+target/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled files
+bin/
+javac/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.old
+
+# Git
+*.lock
+
+# Node (in case any JS used)
+node_modules/
+
+# Maven/
