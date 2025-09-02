@@ -1,0 +1,20 @@
+Pseudo-code: Online Course Subscription System
+
+Classes:
+1. Course
+   - Attributes: title, duration, price
+   - Methods: getDetails()
+
+2. Student
+   - Attributes: name, email, enrolledCourses (List<Course>)
+   - Methods:
+       - enrollCourse(course)
+           if course not in enrolledCourses → add
+           else → show "Already Enrolled"
+       - viewEnrolledCourses()
+
+Story Example:
+- Add courses: Java Basics, DSA in Java, Spring Boot.
+- Amit enrolls in Java Basics + DSA.
+- Priya enrolls in Spring Boot + Java Basics.
+- Print enrolled courses for each student.

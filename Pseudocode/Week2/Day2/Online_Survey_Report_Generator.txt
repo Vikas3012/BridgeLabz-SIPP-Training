@@ -1,0 +1,26 @@
+Class SurveyResponse
+    Attributes: restaurantName, rating
+
+Method generateReport(responses)
+    Use groupingBy(restaurantName, averagingInt(rating))
+    For each restaurant → compute average rating
+    Print report
+
+    Find max average → Best restaurant
+    Find min average → Needs improvement
+
+MAIN:
+    responses = [
+        ("PizzaHut", 4), ("PizzaHut", 5),
+        ("KFC", 3), ("KFC", 4),
+        ("Subway", 5), ("Subway", 4), ("Subway", 5)
+    ]
+
+    generateReport(responses)
+
+Output:
+    PizzaHut → 4.5
+    KFC → 3.5
+    Subway → 4.67
+    Best = Subway
+    Needs improvement = KFC

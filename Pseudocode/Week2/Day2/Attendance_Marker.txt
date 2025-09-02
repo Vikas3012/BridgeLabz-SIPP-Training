@@ -1,0 +1,25 @@
+Define attendance[30][30] // 30 students, 30 days
+
+Method markAttendance(studentID, day, status)
+    attendance[studentID][day] = status   // 1 = Present, 0 = Absent
+
+Method dailySummary(day)
+    Count number of 1s in column 'day'
+    PRINT "Students present on Day {day}: {count}"
+
+Method monthlySummary(studentID)
+    Count number of 1s in row 'studentID'
+    PRINT "Student {ID} present for {count} days"
+
+Method defaulterList()
+    For each student row
+        totalDays = count of 1s
+        IF totalDays < 22 (75% of 30)
+            PRINT "Student {ID} is a defaulter"
+
+MAIN:
+    markAttendance(1, 1, 1)
+    markAttendance(3, 1, 0)
+    dailySummary(10)
+    monthlySummary(5)
+    defaulterList()

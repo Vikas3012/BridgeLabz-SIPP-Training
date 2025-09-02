@@ -1,0 +1,19 @@
+Pseudo-code: Hotel Room Reservation System
+
+Classes:
+1. Room (Base Class)
+   - Attributes: roomNumber, customerName, daysStayed
+   - Methods: calculateBill() → overridden
+
+2. DeluxeRoom (Subclass of Room)
+   - Rate: ₹3000 per night
+   - calculateBill() → daysStayed * 3000
+
+3. SuiteRoom (Subclass of Room)
+   - Rate: ₹5000 per night
+   - calculateBill() → daysStayed * 5000
+
+Booking Flow:
+- Ravi books Deluxe for 3 nights → Bill ₹9000
+- Anita books Suite for 2 nights → Bill ₹10000
+- Print invoice at checkout.

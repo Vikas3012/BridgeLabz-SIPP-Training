@@ -1,0 +1,17 @@
+Pseudo-code: Hospital Department Mapping
+
+Class Doctor:
+- Attributes: name, specialization, experienceYears
+
+Data Structure:
+- Map<String, List<Doctor>> departmentDirectory
+
+Operations:
+- addDoctor(department, doctor)
+- getDoctors(department)
+
+Example Data:
+Cardiology → [Dr. Mehta (15 yrs), Dr. Kapoor (10 yrs)]
+Neurology → [Dr. Sharma (10 yrs), Dr. Das (8 yrs)]
+
+Query: "Neurology" → List doctors in Neurology

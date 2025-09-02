@@ -1,0 +1,17 @@
+Pseudo-code: Payment Gateway Processor
+
+Generic Class Transaction<T>:
+- Holds transaction object
+- Methods: processPayment(), getTransactionDetails()
+
+Payment Types:
+- UPI (upiId, amount, merchantName)
+- Card (cardNumber, cvv, expiryDate, amount)
+- NetBanking (bankName, accountNumber, amount)
+
+Flow:
+- Transaction<UPI> → "Payment of 1200 via UPI successful for Amazon"
+- Transaction<Card> → "Payment of 5000 via Card ending 5432 successful for MakeMyTrip"
+- Transaction<NetBanking> → "Payment of 8000 via NetBanking (HDFC) successful"
+
+Concepts: Generics, Encapsulation, Polymorphism, Extensibility

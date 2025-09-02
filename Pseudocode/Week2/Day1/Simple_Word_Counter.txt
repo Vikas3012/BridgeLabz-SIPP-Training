@@ -1,0 +1,27 @@
+Input: paragraph of text
+
+Method wordCounter(text)
+    Convert text to lowercase
+    Remove punctuation
+    Split text into words
+    Initialize Map<String, Integer> wordCount
+    For each word in words
+        If word exists in map → increment count
+        Else add word with count = 1
+    Sort map by frequency
+    Print words with frequency
+
+MAIN:
+    paragraph = "The news today is about the rise in technology trends."
+    wordCounter(paragraph)
+
+Output:
+    the → 2
+    news → 1
+    today → 1
+    is → 1
+    about → 1
+    rise → 1
+    in → 1
+    technology → 1
+    trends → 1

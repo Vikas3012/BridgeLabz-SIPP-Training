@@ -1,0 +1,21 @@
+Pseudo-code: Student Rank List (Merge Sort)
+
+Class Student:
+- Attributes: name, marks
+
+Comparator Logic:
+- Sort by marks (descending)
+- If marks equal → sort by name (ascending)
+
+Algorithm:
+- Use Merge Sort
+- While merging → apply comparator
+
+Example:
+Input: Amit-92, Bhavna-92, Kiran-85, Dinesh-78, Charu-92
+Output:
+Amit-92
+Bhavna-92
+Charu-92
+Kiran-85
+Dinesh-78

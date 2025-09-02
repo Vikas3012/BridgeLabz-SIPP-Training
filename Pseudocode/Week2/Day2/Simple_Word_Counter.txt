@@ -1,0 +1,26 @@
+Input: paragraph of text
+
+Method wordCounter(text)
+    Convert text to lowercase
+    Remove punctuation
+    Split text into words
+    Initialize Map<String, Integer> wordCount
+    For each word in words
+        If word exists in map → increment count
+        Else add word with count = 1
+    Sort map by frequency
+    Print words with frequency
+
+MAIN:
+    paragraph = "Sports bring people together. Sports inspire teamwork. Sports create leaders."
+    wordCounter(paragraph)
+
+Output:
+    sports → 3
+    bring → 1
+    people → 1
+    together → 1
+    inspire → 1
+    teamwork → 1
+    create → 1
+    leaders → 1

@@ -1,0 +1,18 @@
+Define attendance[students][days]
+
+Method markAttendance(studentID, day, status)
+    attendance[studentID][day] = status   // P or A
+
+Method updateAttendance(studentID, day, newStatus)
+    attendance[studentID][day] = newStatus
+
+Method generateReport(studentID)
+    presentCount = count of 'P' in that student’s row
+    PRINT "Student {ID} present for {presentCount} days."
+
+MAIN:
+    markAttendance(1, 1, "P")
+    markAttendance(1, 2, "P")
+    markAttendance(1, 3, "A")
+    updateAttendance(1, 3, "P")
+    generateReport(1)

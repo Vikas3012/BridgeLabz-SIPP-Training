@@ -1,0 +1,26 @@
+Class User
+    Attributes: username, password
+    Method login()
+
+Class Student extends User
+    Attributes: enrolledCourses[]
+    Method login()
+        IF username and password are valid AND enrolledCourses not empty
+            PRINT "Student login successful. Showing exams."
+        ELSE
+            PRINT "Access denied."
+
+Class Admin extends User
+    Attributes: role = "Admin"
+    Method login()
+        IF username and password are valid AND role == "Admin"
+            PRINT "Admin login successful. Showing exam management tools."
+        ELSE
+            PRINT "Access denied."
+
+MAIN:
+    student1 = new Student("john123", "pass123", ["Math", "CS"])
+    admin1 = new Admin("admin101", "rootpass")
+
+    student1.login()
+    admin1.login()

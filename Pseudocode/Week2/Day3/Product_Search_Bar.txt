@@ -1,0 +1,18 @@
+Pseudo-code: Product Search Bar
+
+Data: Sorted Array of Products
+
+Functions:
+- binarySearch(products[], key)
+   left = 0, right = n-1
+   while left <= right:
+       mid = (left+right)//2
+       if products[mid] == key → return Found
+       else if products[mid] < key → left = mid+1
+       else → right = mid-1
+   return Not Found
+
+Story Example:
+- Search "Laptop" → Found
+- Search "Headphones" → Not Found
+- Search "Shoes" → Found

@@ -1,0 +1,22 @@
+Class TaskOrganizer
+    Attribute: tasks = LinkedHashMap<Integer, String>
+    counter = 1
+
+    Method addTask(description)
+        tasks.put(counter, description)
+        counter++
+
+    Method removeTask(taskId)
+        tasks.remove(taskId)
+
+    Method viewTasks()
+        For each (id, desc) in tasks
+            PRINT id + " → " + desc
+
+MAIN:
+    organizer = new TaskOrganizer()
+    organizer.addTask("Check emails")
+    organizer.addTask("Prepare sales report")
+    organizer.addTask("Call client")
+    organizer.removeTask(2)
+    organizer.viewTasks()

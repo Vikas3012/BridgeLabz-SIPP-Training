@@ -1,0 +1,27 @@
+Class Vehicle
+    Attributes: vehicleNumber, entryTime
+    Method calculateFee(exitTime)  // to be overridden
+
+Class Car extends Vehicle
+    Method calculateFee(exitTime)
+        hours = ceil(exitTime - entryTime in hours)
+        RETURN 50 + (hours - 1) * 30
+
+Class Bike extends Vehicle
+    Method calculateFee(exitTime)
+        hours = ceil(exitTime - entryTime in hours)
+        RETURN 20 + (hours - 1) * 10
+
+Class Truck extends Vehicle
+    Method calculateFee(exitTime)
+        hours = ceil(exitTime - entryTime in hours)
+        RETURN 100 + (hours - 1) * 50
+
+MAIN:
+    car = new Car("KA05AB1234", 10:00)
+    bike = new Bike("KA05XY7890", 11:15)
+    truck = new Truck("KA09TR5566", 09:30)
+
+    car.calculateFee(13:30)   // 125
+    bike.calculateFee(12:00) // 30
+    truck.calculateFee(14:00) // 325
